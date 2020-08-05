@@ -121,3 +121,26 @@ False
 True
 
 
+##                       How to access parent members in a subclass?
+
+class Base:
+
+     def __init__(self,x):
+          self.x = x
+
+class Derived(Base):
+
+     def __init__(self,x,y):
+          Base.x = x
+          self.y = y
+
+     def output(self):
+          print (Base.x,self.y)
+
+d = Derived(1,2)
+d.output()
+
+#Output: 1 2
+
+
+
