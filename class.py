@@ -28,28 +28,14 @@ print (z.number,y.number)
 2 2
 3 2
 
-##                                    Methods
 
-Function that belongs to a class is called an Method.
-All methods require ‘self’ parameter. If you have coded in other OOP language
-you can think of ‘self’ as the ‘this’ keyword which is used for the current object.
-It unhides the current instance variable.’self’ mostly work like ‘this’.
+##How to create an empty class?
 
-# A Python program to demonstrate working of class methods 
-class Vector2d:
-     x = 0
-     y = 0
+# An empty class 
+class Test: 
+	pass
 
-     def set(self,x,y):
-          self.x = x
-          self.y = y
 
-vec = Vector2d()
-vec.set(1,2)
-print (vec.x,vec.y)
-print (Vector2d.x,Vector2d.y)
 
-#Output:
-1 2
-0 0
+
 
