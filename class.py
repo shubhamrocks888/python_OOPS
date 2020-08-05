@@ -10,6 +10,10 @@ Eg.: Myclass.Myattribute
 
 A sample E.g for classes:
 
+
+''' In Python 3.x, “class Test(object)” and “class Test” are same. '''
+
+
 # creates a class named MyClass 
 class Myclass:
      number=1
