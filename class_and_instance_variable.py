@@ -61,7 +61,19 @@ print ("a.stream =", a.stream)
 print ("b.stream =", b.stream) 
 
 
+To list the attributes of an instance/object, we have two functions:-
 
-
-
+1. vars()– This function displays the attribute of an instance in the form of an dictionary.
+2. dir()–  This function displays more attributes than vars function,as it is not limited to
+           instance. It displays the class attributes as well. It also displays the attributes
+           of its ancestor classes.
  
+print (vars(a))
+print (dir(a))
+
+#Output:
+{'name': 'check', 'roll': 3}
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__',
+ '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__',
+ '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__',
+ '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'name', 'roll', 'stream']
